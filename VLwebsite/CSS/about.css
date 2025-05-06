@@ -1,29 +1,122 @@
 /* Base styles */
 body {
-  background: #232d1b; /* dark olive green */
-  color: #e2e2c0;      /* light khaki */
+  background: #232d1b url('../images/toy-pattern-bg.png');
+  color: #e2e2c0;
   font-family: 'Segoe UI', Arial, sans-serif;
+  overflow-x: hidden;
 }
 
 /* Navbar styles */
-.navbar, .navbar-brand {
-  background: #3e4c2c !important; /* deeper green */
-  color: #e2e2c0 !important;
+.navbar {
+  background: rgba(62, 76, 44, 0.95) !important;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(8px);
+}
+
+.navbar-brand {
+  color: #ffd700 !important;
+  font-size: 1.6rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s;
+}
+
+.navbar-brand:hover {
+  transform: scale(1.05);
 }
 
 .nav-link {
   color: #e2e2c0 !important;
   margin-right: 1rem;
-  transition: color 0.3s;
+  font-weight: 500;
+  position: relative;
+  padding: 8px 0;
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #bfa14a;
+  transition: width 0.3s ease;
+}
+
+.nav-link:hover::after {
+  width: 100%;
 }
 
 .nav-link:hover {
-  color: #bfa14a !important; /* gold accent */
+  color: #ffd700 !important;
 }
 
+/* Headings */
 h1, h2, h3, .navbar-brand {
   font-weight: bold;
   letter-spacing: 1px;
+}
+
+h1.display-4 {
+  text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.4);
+  color: #ffd700;
+}
+
+/* Card styling */
+.card {
+  background: rgba(62, 76, 44, 0.8);
+  border: 2px solid #bfa14a;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+  transition: transform 0.4s, box-shadow 0.4s;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 30px rgba(191, 161, 74, 0.4);
+}
+
+.card-header {
+  background: rgba(191, 161, 74, 0.3);
+  border-bottom: 2px solid #bfa14a;
+  padding: 12px 20px;
+}
+
+.card-title {
+  color: #ffd700;
+}
+
+/* List styling */
+.list-group-item {
+  background: rgba(62, 76, 44, 0.6);
+  color: #e2e2c0;
+  border-color: rgba(191, 161, 74, 0.3);
+  transition: background-color 0.3s;
+  position: relative;
+  padding-left: 2rem;
+}
+
+.list-group-item:hover {
+  background: rgba(62, 76, 44, 0.9);
+}
+
+.list-group-item::before {
+  content: "★";
+  position: absolute;
+  left: 10px;
+  color: #bfa14a;
+}
+
+/* Gallery */
+.gallery-image {
+  transition: transform 0.5s, filter 0.5s;
+  cursor: pointer;
+}
+
+.gallery-image:hover {
+  transform: scale(1.03);
+  filter: brightness(1.1);
 }
 
 /* Animation styles */
@@ -36,4 +129,91 @@ h1, h2, h3, .navbar-brand {
 .fade-in.visible {
   opacity: 1;
   transform: translateY(0);
+}
+
+.slide-in-left {
+  opacity: 0;
+  transform: translateX(-50px);
+  transition: opacity 0.8s, transform 0.8s;
+}
+
+.slide-in-left.visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.slide-in-right {
+  opacity: 0;
+  transform: translateX(50px);
+  transition: opacity 0.8s, transform 0.8s;
+}
+
+.slide-in-right.visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.scale-in {
+  opacity: 0;
+  transform: scale(0.8);
+  transition: opacity 0.8s, transform 0.8s;
+}
+
+.scale-in.visible {
+  opacity: 1;
+  transform: scale(1);
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(35, 45, 27, 0.9);
+}
+
+::-webkit-scrollbar-thumb {
+  background: #bfa14a;
+  border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #ffd700;
+}
+
+/* Image overlay effect */
+.card-img-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.card-img-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(62, 76, 44, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.4s;
+}
+
+.card-img-container:hover .card-img-overlay {
+  opacity: 1;
+}
+
+.zoom-icon {
+  color: #ffd700;
+  font-size: 2rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .card {
+    margin-bottom: 20px;
+  }
 }
