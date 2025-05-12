@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Nuesto desarrollo</title>
+  <title>Nuestro desarrollo</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="../CSS/dev.css" rel="stylesheet">
 </head>
@@ -18,16 +18,124 @@
       </div>
     </div>
   </nav>
+  
   <!-- Main Content -->
   <div class="container mt-5 fade-in">
-    <h2>Sobre nuestro desarrollo</h2>
-    <div class="row">
-      <div class="col-md-4 gallery-img">
-        <img src="https://via.placeholder.com/300x200" class="img-fluid rounded" alt="Screenshot 1">
+    <div class="row mb-4">
+      <div class="col-12 text-center">
+        <h1 class="display-4 mb-4">Nuestro Desarrollo</h1>
+        <p class="lead">Un vistazo al proceso creativo y técnico detrás de Royal Toys</p>
       </div>
-      <!-- Add more images as needed -->
+    </div>
+    
+    <!-- Gallery Row 1 -->
+    <div class="row mb-5">
+      <div class="col-md-6 mb-4">
+        <div class="card h-100">
+          <img src="../images/IMG-20250505-WA0006.jpg" class="card-img-top gallery-img" alt="Primera etapa">
+          <div class="card-body">
+            <p class="card-text">Planeación del mapa.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 mb-4">
+        <div class="card h-100">
+          <img src="../images/Imagen de WhatsApp 2025-05-05 a las 19.05.46_97f0a918.jpg" class="card-img-top gallery-img" alt="Modelado y texturización">
+          <div class="card-body">
+            <p class="card-text">Ajuste de escala dentro del mapa.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Gallery Row 2 -->
+    <div class="row mb-5">
+      <div class="col-md-6 mb-4">
+        <div class="card h-100">
+          <img src="../images/IMG-20250505-WA0011.jpg" class="card-img-top gallery-img" alt="Pruebas iniciales">
+          <div class="card-body">
+            <p class="card-text">Modeaje de las armas.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 mb-4">
+        <div class="card h-100">
+          <img src="../images/IMG-20250505-WA0014.jpg" class="card-img-top gallery-img" alt="Diseño de HUDs">
+          <div class="card-body">
+            <p class="card-text">Vista exterior del mapa</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Gallery Row 3 -->
+    <div class="row mb-5">
+      <div class="col-md-6 mb-4">
+        <div class="card h-100">
+          <img src="../images/IMG-20250505-WA0016.jpg" class="card-img-top gallery-img" alt="Implementación de power-ups">
+          <div class="card-body">
+            <p class="card-text">Optimiazcion del escenario para obtener FPS optimo durante gameplay</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 mb-4">
+        <div class="card h-100">
+          <img src="../images/Imagen de WhatsApp 2025-05-05 a las 19.05.46_950a48a8.jpg" class="card-img-top gallery-img" alt="Últimos ajustes">
+          <div class="card-body">
+            <p class="card-text">Revison de modelos que ocupamos para el mapa.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Video Section -->
+    <div class="row mb-5">
+      <div class="col-12 text-center mb-4">
+        <h2>Video del Desarrollo</h2>
+        <p class="lead">Mira cómo creamos Royal Toys desde cero</p>
+      </div>
+      <div class="col-12">
+        <div class="card video-card">
+          <div class="video-container">
+            <!-- Option 1: Youtue video -->
+            <iframe class="video-frame" src="https://www.youtube.com/embed/u31qwQUeGuM" 
+                    title="Royal Toys - Desarrollo" frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen></iframe>
+            
+            <!-- Option 2: Video in website -->
+         
+            <!--
+            <div class="video-placeholder">
+              <img src="../images/video-thumbnail.jpg" alt="Video del desarrollo" class="img-fluid">
+              <div class="play-button-overlay">
+                <i class="fas fa-play-circle"></i>
+              </div>
+            </div>
+            -->
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">Royal Toys: El Proceso Completo</h3>
+            <p class="card-text">Este video muestra nuestro journey de desarrollo desde los primeros conceptos hasta el juego final. Incluye sesiones de diseño, programación de mecánicas y pruebas de juego.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+  <!-- Modal for enlarged images -->
+  <div class="modal fade" id="imageModal" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body text-center p-0">
+          <img src="" class="img-fluid" id="modalImage" alt="Enlarged image" style="max-height: 80vh;">
+        </div>
+      </div>
     </div>
   </div>
+
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
   <script src="../JAVASCRIPT/dev.js"></script>
 </body>
