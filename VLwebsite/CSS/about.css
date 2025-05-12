@@ -1,7 +1,7 @@
 /* Base styles */
 body {
   background: #232d1b url('../images/toy-pattern-bg.png');
-  color: #e2e2c0;
+  color: #ffffff;
   font-family: 'Segoe UI', Arial, sans-serif;
   overflow-x: hidden;
 }
@@ -87,6 +87,17 @@ h1.display-4 {
   color: #ffd700;
 }
 
+.card-body {
+  color: #ffffff;
+}
+
+.card-text {
+  color: #ffffff;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
 /* List styling */
 .list-group-item {
   background: rgba(62, 76, 44, 0.6);
@@ -121,8 +132,8 @@ h1.display-4 {
 
 /* Animation styles */
 .fade-in {
-  opacity: 0;
-  transform: translateY(30px);
+  opacity: 1;
+  transform: translateY(0);
   transition: opacity 1s, transform 1s;
 }
 
@@ -132,8 +143,8 @@ h1.display-4 {
 }
 
 .slide-in-left {
-  opacity: 0;
-  transform: translateX(-50px);
+  opacity: 1;
+  transform: translateX(0);
   transition: opacity 0.8s, transform 0.8s;
 }
 
@@ -143,8 +154,8 @@ h1.display-4 {
 }
 
 .slide-in-right {
-  opacity: 0;
-  transform: translateX(50px);
+  opacity: 1;
+  transform: translateX(0);
   transition: opacity 0.8s, transform 0.8s;
 }
 
@@ -154,8 +165,8 @@ h1.display-4 {
 }
 
 .scale-in {
-  opacity: 0;
-  transform: scale(0.8);
+  opacity: 1;
+  transform: scale(1);
   transition: opacity 0.8s, transform 0.8s;
 }
 
