@@ -136,12 +136,12 @@
       </div>
     </div>
 
-    <!-- Placeholder for screenshots and character images -->
+
     <div class="row mb-5 text-center">
       <h3 class="mb-4">Galería del juego</h3>
       <div class="col-md-4 mb-3">
         <div class="card">
-          <img src="https://via.placeholder.com/500x300?text=Escenario+de+juego" class="card-img-top" alt="Escenario de juego">
+          <img src="../images/level.png" class="card-img-top gallery-img" alt="Escenario de juego" style="cursor: pointer;">
           <div class="card-body">
             <p class="card-text">Escenario principal: Cuarto de juegos</p>
           </div>
@@ -149,7 +149,7 @@
       </div>
       <div class="col-md-4 mb-3">
         <div class="card">
-          <img src="https://via.placeholder.com/500x300?text=Personajes" class="card-img-top" alt="Personajes">
+          <img src="../images/characters.png" class="card-img-top gallery-img" alt="Personajes" style="cursor: pointer;">
           <div class="card-body">
             <p class="card-text">Los personajes jugables</p>
           </div>
@@ -157,10 +157,24 @@
       </div>
       <div class="col-md-4 mb-3">
         <div class="card">
-          <img src="https://via.placeholder.com/500x300?text=Gameplay" class="card-img-top" alt="Gameplay">
+          <img src="../images/gameplay.png" class="card-img-top gallery-img" alt="Gameplay" style="cursor: pointer;">
           <div class="card-body">
             <p class="card-text">Captura del gameplay en acción</p>
           </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal for enlarged images -->
+  <div class="modal fade" id="imageModal" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body text-center p-0">
+          <img src="" class="img-fluid" id="modalImage" alt="Enlarged image" style="max-height: 80vh;">
         </div>
       </div>
     </div>

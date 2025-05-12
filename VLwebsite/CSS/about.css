@@ -87,8 +87,32 @@ h1.display-4 {
   color: #ffd700;
 }
 
+/* Add these stronger rules for card-body */
+
 .card-body {
   color: #ffffff;
+  transition: none !important;
+  transform: none !important;
+  animation: none !important;
+  will-change: auto !important;
+  position: relative;
+  z-index: 1;
+}
+
+/* Make sure scale-in and other animations don't affect card-body */
+.scale-in .card-body,
+.slide-in-left .card-body,
+.slide-in-right .card-body,
+.fade-in .card-body {
+  opacity: 1 !important;
+  transform: none !important;
+  transition: none !important;
+  animation: none !important;
+}
+
+/* Make sure :hover effects don't cascade to card-body */
+.card:hover .card-body {
+  transform: none !important;
 }
 
 .card-text {
@@ -110,6 +134,8 @@ h1.display-4 {
 
 .list-group-item:hover {
   background: rgba(62, 76, 44, 0.9);
+  transition: none !important;
+  transform: none !important;
 }
 
 .list-group-item::before {
@@ -197,6 +223,8 @@ h1.display-4 {
 .card-img-container {
   position: relative;
   overflow: hidden;
+  transition: none !important;
+  transform: none !important;
 }
 
 .card-img-overlay {
@@ -211,10 +239,14 @@ h1.display-4 {
   justify-content: center;
   opacity: 0;
   transition: opacity 0.4s;
+  transition: none !important;
+  transform: none !important;
 }
 
 .card-img-container:hover .card-img-overlay {
   opacity: 1;
+  transition: none !important;
+  transform: none !important;
 }
 
 .zoom-icon {
@@ -228,3 +260,44 @@ h1.display-4 {
     margin-bottom: 20px;
   }
 }
+
+    .gallery-img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      object-position: center;
+    }
+    /* Add these styles at the end of your file */
+  
+  /* Custom modal styling */
+  .modal-content {
+    background: rgba(62, 76, 44, 0.95);
+    border: 2px solid #bfa14a;
+    border-radius: 12px;
+  }
+  
+  .modal-header {
+    opacity: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 1050;
+  }
+  
+  .modal-header:hover {
+    opacity: 1;
+  }
+  
+  .modal-header .btn-close {
+    background-color: rgba(255, 215, 0, 0.7);
+    padding: 0.5rem;
+  }
+  
+  /* Optional: Style the modal body */
+  .modal-body {
+    padding: 0;
+  }
+  
+  #modalImage {
+    border-radius: 8px;
+  }

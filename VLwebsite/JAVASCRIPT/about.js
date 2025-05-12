@@ -95,78 +95,23 @@ document.addEventListener("DOMContentLoaded", function() {
   objectivesCard.classList.add('slide-in-right');
   
   // Gallery image hover effects and modal functionality
-  const galleryImages = document.querySelectorAll('.row.mb-5.text-center .card-img-top');
+  const galleryImages = document.querySelectorAll('.gallery-img');
   galleryImages.forEach(img => {
     // Add gallery-image class for hover effects
     img.classList.add('gallery-image');
     
-    // Create container and overlay for zoom icon
-    const parent = img.parentNode;
-    const container = document.createElement('div');
-    container.className = 'card-img-container';
-    
-    const overlay = document.createElement('div');
-    overlay.className = 'card-img-overlay';
-    overlay.innerHTML = '<span class="zoom-icon">🔍</span>';
-    
-    // Rearrange DOM
-    parent.insertBefore(container, img);
-    container.appendChild(img);
-    container.appendChild(overlay);
-    
     // Add click event for modal
     img.addEventListener('click', function() {
-      // Create modal
-      const modal = document.createElement('div');
-      modal.style.position = 'fixed';
-      modal.style.top = '0';
-      modal.style.left = '0';
-      modal.style.width = '100%';
-      modal.style.height = '100%';
-      modal.style.backgroundColor = 'rgba(0,0,0,0.9)';
-      modal.style.display = 'flex';
-      modal.style.alignItems = 'center';
-      modal.style.justifyContent = 'center';
-      modal.style.zIndex = '1000';
-      modal.style.opacity = '0';
-      modal.style.transition = 'opacity 0.3s';
+      // Get the modal element and image
+      const modalElement = document.getElementById('imageModal');
+      const modalImage = document.getElementById('modalImage');
       
-      // Create image in modal
-      const modalImg = document.createElement('img');
-      modalImg.src = this.src;
-      modalImg.style.maxHeight = '80%';
-      modalImg.style.maxWidth = '80%';
-      modalImg.style.border = '3px solid #bfa14a';
-      modalImg.style.boxShadow = '0 0 25px rgba(191, 161, 74, 0.6)';
+      // Set the image source
+      modalImage.src = this.src;
       
-      // Add close button
-      const closeBtn = document.createElement('span');
-      closeBtn.innerHTML = '&times;';
-      closeBtn.style.position = 'absolute';
-      closeBtn.style.top = '20px';
-      closeBtn.style.right = '30px';
-      closeBtn.style.color = '#fff';
-      closeBtn.style.fontSize = '40px';
-      closeBtn.style.fontWeight = 'bold';
-      closeBtn.style.cursor = 'pointer';
-      
-      // Add click event to close modal
-      closeBtn.onclick = function() {
-        modal.style.opacity = '0';
-        setTimeout(() => {
-          document.body.removeChild(modal);
-        }, 300);
-      };
-      
-      // Append elements to modal
-      modal.appendChild(modalImg);
-      modal.appendChild(closeBtn);
-      document.body.appendChild(modal);
-      
-      // Fade in modal
-      setTimeout(() => {
-        modal.style.opacity = '1';
-      }, 10);
+      // Create and show the modal using Bootstrap
+      const modalInstance = new bootstrap.Modal(modalElement);
+      modalInstance.show();
     });
   });
   
@@ -200,3 +145,4 @@ document.addEventListener("DOMContentLoaded", function() {
     });
   });
 });
+
