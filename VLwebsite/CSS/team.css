@@ -32,6 +32,7 @@ h1, h2, h3, .navbar-brand {
   border: 2px solid #bfa14a;
   color: #e2e2c0;
   transition: transform 0.3s, box-shadow 0.3s;
+  padding: 15px;
 }
 
 .card:hover {
@@ -40,8 +41,20 @@ h1, h2, h3, .navbar-brand {
 }
 
 .card-img-top {
-  border: 3px solid #bfa14a;
-  border-radius: 8px;
+  border: none;
+  border-radius: 0;
+  background: white;
+  padding: 10px 10px 30px 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transform: rotate(-1deg);
+  transition: transform 0.3s ease;
+  width: 100%;
+  aspect-ratio: 4/3;
+  object-fit: cover;
+}
+
+.card:hover .card-img-top {
+  transform: rotate(0deg);
 }
 
 /* Animation styles */
