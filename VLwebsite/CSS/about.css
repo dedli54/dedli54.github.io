@@ -301,3 +301,21 @@ h1.display-4 {
   #modalImage {
     border-radius: 8px;
   }
+
+    /* Social media icons */
+  .social-icon {
+    font-size: 1.3rem;
+    transition: transform 0.3s;
+    color: #e2e2c0;
+  }
+  
+  .social-icon:hover {
+    transform: scale(1.2);
+  }
+  
+  .social-icons {
+    display: flex;
+    align-items: center;
+    border-left: 1px solid rgba(191, 161, 74, 0.4);
+    padding-left: 15px;
+  }

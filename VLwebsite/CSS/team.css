@@ -68,3 +68,21 @@ h1, h2, h3, .navbar-brand {
   opacity: 1;
   transform: translateY(0);
 }
+
+/* Social media icons */
+.social-icon {
+  font-size: 1.3rem;
+  transition: transform 0.3s;
+  color: #e2e2c0;
+}
+
+.social-icon:hover {
+  transform: scale(1.2);
+}
+
+.social-icons {
+  display: flex;
+  align-items: center;
+  border-left: 1px solid rgba(191, 161, 74, 0.4);
+  padding-left: 15px;
+}
