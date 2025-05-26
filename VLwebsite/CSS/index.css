@@ -21,10 +21,19 @@ body {
   color: #bfa14a !important; /* gold accent */
 }
 
-h1, h2, h3, .navbar-brand {
+h1, h3, .navbar-brand {
   font-weight: bold;
   letter-spacing: 1px;
+  color: #ffd700;
 }
+
+h2 {
+  font-weight: quick;
+  letter-spacing: 1px;
+
+}
+
+
 
 /* Animation styles */
 .fade-in {
