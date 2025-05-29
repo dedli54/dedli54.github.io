@@ -21,10 +21,13 @@ body {
   color: #bfa14a !important; /* gold accent */
 }
 
+
 h1, h2, h3, .navbar-brand {
   font-weight: bold;
   letter-spacing: 1px;
+  color: #ffd700;
 }
+
 
 /* Card styles */
 .card {
