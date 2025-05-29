@@ -1,0 +1,126 @@
+/* Specialties page specific styles */
+.specialties-title {
+    color: #894e3f;
+    font-weight: bold;
+}
+
+.specialty-introduction .lead {
+    color: #894e3f;
+    line-height: 1.7;
+}
+
+.specialties-categories .nav-link {
+    color: #9c634f;
+    background-color: transparent;
+    border: 1px solid #f0d7a7;
+    margin: 0 5px;
+    transition: all 0.3s ease;
+}
+
+.specialties-categories .nav-link:hover {
+    background-color: rgba(195, 121, 96, 0.1);
+}
+
+.specialties-categories .nav-link.active {
+    background-color: #894e3f;
+    color: #eee1ba;
+    border-color: #894e3f;
+}
+
+.category-title {
+    color: #894e3f;
+    margin: 2rem 0 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid #f0d7a7;
+    text-align: center;
+}
+
+.category-description {
+    color: #9c634f;
+    max-width: 700px;
+    margin: 0 auto 1.5rem;
+}
+
+.specialty-item {
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 3px 10px rgba(137, 78, 63, 0.1);
+    height: 100%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+}
+
+.specialty-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(137, 78, 63, 0.2);
+}
+
+.specialty-badge {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background-color: #894e3f;
+    color: #eee1ba;
+    font-size: 0.8rem;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-weight: bold;
+    z-index: 2;
+}
+
+.specialty-item img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+.specialty-item .content {
+    padding: 1.5rem;
+}
+
+.specialty-item h3 {
+    color: #894e3f;
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+}
+
+specialty-item .price {
+    color: #c37960;
+    font-weight: bold;
+    font-size: 1.1rem;
+    margin-bottom: 0.75rem;
+}
+
+.specialty-item p {
+    color: #9c634f;
+    margin-bottom: 1rem;
+}
+
+.specialty-item .btn {
+    background-color: #894e3f;
+    color: #eee1ba;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+.specialty-item .btn:hover {
+    background-color: #c37960;
+}
+
+.specialty-available {
+    font-size: 0.85rem;
+    color: #9c634f;
+    margin-bottom: 0.75rem;
+    font-style: italic;
+}
+
+/* Empty state for specialty containers */
+.empty-specialty {
+    text-align: center;
+    padding: 2rem;
+    color: #9c634f;
+    background-color: rgba(240, 215, 167, 0.2);
+    border-radius: 8px;
+    margin: 1rem 0;
+}

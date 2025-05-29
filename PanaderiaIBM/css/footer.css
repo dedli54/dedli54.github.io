@@ -1,0 +1,39 @@
+
+.bakery-footer {
+    background-color: #f0d7a7;
+    color: #894e3f;
+    padding: 2rem 0 1rem;
+    box-shadow: 0 -2px 10px rgba(137, 78, 63, 0.2);
+}
+
+.bakery-footer h5 {
+    color: #894e3f;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+}
+
+.bakery-footer p {
+    margin-bottom: 0.5rem;
+    color: #9c634f;
+}
+
+.bakery-footer hr {
+    border-color: rgba(137, 78, 63, 0.2);
+    margin: 1.5rem 0;
+}
+
+.social-links a {
+    color: #9c634f;
+    font-size: 1.2rem;
+    margin-left: 0.5rem;
+    transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+    color: #894e3f;
+}
+
+.bakery-footer i {
+    margin-right: 5px;
+}

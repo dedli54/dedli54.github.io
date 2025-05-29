@@ -1,0 +1,245 @@
+
+body {
+    background-color: #eee1ba;
+    font-family: 'Arial', sans-serif;
+}
+
+
+.hero-section {
+    padding: 4rem 0;
+    background-color: #eee1ba;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-title {
+    color: #894e3f;
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+    line-height: 1.2;
+}
+
+.hero-subtitle {
+    color: #9c634f;
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    line-height: 1.6;
+}
+
+.hero-buttons .btn {
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+    padding: 0.75rem 1.5rem;
+}
+
+.hero-buttons .btn-primary {
+    background-color: #894e3f;
+    border-color: #894e3f;
+    color: #eee1ba;
+}
+
+.hero-buttons .btn-primary:hover {
+    background-color: #c37960;
+    border-color: #c37960;
+}
+
+.hero-buttons .btn-outline-primary {
+    border-color: #894e3f;
+    color: #894e3f;
+}
+
+.hero-buttons .btn-outline-primary:hover {
+    background-color: #894e3f;
+    color: #eee1ba;
+}
+
+.hero-image-container {
+    position: relative;
+    z-index: 1;
+}
+
+.hero-image {
+    width: 100%;
+    max-height: 500px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 10px 30px rgba(137, 78, 63, 0.2);
+}
+
+/* Featured Section */
+.featured-section {
+    padding: 5rem 0;
+    background-color: #fff;
+}
+
+.section-title {
+    color: #894e3f;
+    margin-bottom: 2.5rem;
+    font-weight: bold;
+    position: relative;
+    padding-bottom: 0.75rem;
+}
+
+.section-title:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 3px;
+    background-color: #f0d7a7;
+}
+
+.featured-item {
+    background: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(137, 78, 63, 0.1);
+    height: 100%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.featured-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(137, 78, 63, 0.2);
+}
+
+.featured-image img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+.featured-content {
+    padding: 1.5rem;
+}
+
+.featured-content h3 {
+    color: #894e3f;
+    font-size: 1.25rem;
+    margin-bottom: 0.75rem;
+}
+
+.featured-content p {
+    color: #9c634f;
+    margin-bottom: 1.25rem;
+    font-size: 0.95rem;
+}
+
+.featured-content .btn-secondary {
+    background-color: #c37960;
+    border-color: #c37960;
+    color: #fff;
+}
+
+.featured-content .btn-secondary:hover {
+    background-color: #894e3f;
+    border-color: #894e3f;
+}
+
+/* About Section */
+.about-section {
+
+    padding: 5rem 0;
+    background-color: #eee1ba;
+}
+
+.about-image {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 10px 30px rgba(137, 78, 63, 0.15);
+}
+
+.about-content {
+    padding: 2rem;
+}
+
+.about-content .section-title {
+    text-align: left;
+    margin-bottom: 1.5rem;
+}
+
+.about-content .section-title:after {
+    left: 0;
+    transform: none;
+}
+
+.about-content p {
+    color: #9c634f;
+    margin-bottom: 1.25rem;
+    line-height: 1.6;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 991px) {
+    .hero-title {
+        font-size: 2.5rem;
+    }
+    
+    .hero-text-container {
+        margin-bottom: 3rem;
+    }
+}
+
+@media (max-width: 767px) {
+    .hero-section {
+        padding: 3rem 0;
+    }
+    
+    .hero-title {
+        font-size: 2rem;
+    }
+    
+    .hero-subtitle {
+        font-size: 1rem;
+    }
+    
+    .featured-section, 
+    .about-section {
+        padding: 3rem 0;
+    }
+    
+    .about-content {
+        padding: 1.5rem 0;
+        margin-top: 2rem;
+    }
+}
+
+/* Add these styles at the end of the file to ensure consistency across all primary buttons */
+.btn-primary {
+    background-color: #894e3f;
+    border-color: #894e3f;
+    color: #eee1ba;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active {
+    background-color: #c37960 !important;
+    border-color: #c37960 !important;
+    color: #eee1ba !important;
+}
+
+.about-content .btn-primary,
+.featured-section .btn-primary {
+    padding: 0.5rem 1.25rem;
+    font-weight: 600;
+}
+
+/* Ensure consistent styling for all secondary buttons as well */
+.btn-secondary {
+    background-color: #c37960;
+    border-color: #c37960;
+    color: #fff;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.btn-secondary:hover,
+.btn-secondary:focus,
+.btn-secondary:active {
+    background-color: #894e3f !important;
+    border-color: #894e3f !important;
+}
