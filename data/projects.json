@@ -1,0 +1,110 @@
+[
+  {
+    "id": "web1-coco-lee",
+    "title": "El Coco que Lee - Red Social de Libros",
+    "desc": "Plataforma social en español para explorar libros, crear publicaciones y comentar. Sistema front-end con Bootstrap 5 y Font Awesome.",
+    "tech": ["HTML5", "CSS3", "JavaScript", "Bootstrap", "Font Awesome"],
+    "image": "images/project2.svg",
+    "repo": "https://github.com/dedli54/Web1",
+    "docs": "https://deepwiki.com/dedli54/Web1"
+  },
+  {
+    "id": "graficas2-directx",
+    "title": "Graficas2 - Juego 3D DirectX 11",
+    "desc": "Juego 3D de exploración con terreno heightmap, enemigos AI, sistema de colisiones, power-ups y audio XACT3. Motor custom con DirectX 11.",
+    "tech": ["C++", "DirectX 11", "HLSL", "XACT3", "DirectInput", "XInput"],
+    "image": "images/project3.svg",
+    "repo": "https://github.com/dedli54/Graficas2",
+    "docs": "https://deepwiki.com/dedli54/Graficas2"
+  },
+  {
+    "id": "ux-taqueria",
+    "title": "Taquería Juárez - Sistema de Pedidos",
+    "desc": "Sistema web de pedidos online para taquería con carrito localStorage, recomendaciones personalizadas y checkout. PHP + MySQL + jQuery.",
+    "tech": ["PHP", "MySQL", "jQuery", "Bootstrap", "JavaScript", "HTML5", "CSS3"],
+    "image": "images/fapsi.svg",
+    "repo": "https://github.com/dedli54/UX",
+    "docs": "https://deepwiki.com/dedli54/UX"
+  },
+  {
+    "id": "graficasweb-threejs",
+    "title": "GraficasWeb - Juego Dodgeball 3D",
+    "desc": "Juego multijugador de dodgeball en browser con Three.js, Firebase Realtime Database, Google Sign-In y 3 niveles progresivos.",
+    "tech": ["Three.js", "JavaScript", "Firebase", "GLTFLoader", "HTML5"],
+    "image": "images/project2.svg",
+    "repo": "https://github.com/dedli54/GraficasWeb",
+    "docs": "https://deepwiki.com/dedli54/GraficasWeb"
+  },
+  {
+    "id": "alto-volumen-datos",
+    "title": "Sistema de Gestión Hotelera",
+    "desc": "App desktop Windows Forms para gestión de hoteles con Apache Cassandra (NoSQL). Arquitectura N-tier con autenticación RBAC.",
+    "tech": ["C#", ".NET Framework", "Apache Cassandra", "Windows Forms", "CQL"],
+    "image": "images/project3.svg",
+    "repo": "https://github.com/dedli54/Administracion-de-Alto-Volumen-de-Datos",
+    "docs": "https://deepwiki.com/dedli54/Administracion-de-Alto-Volumen-de-Datos"
+  },
+  {
+    "id": "mad-bible-query",
+    "title": "MAD - Bible Query Manager",
+    "desc": "App desktop .NET 6 con WinForms para búsqueda y gestión de versículos bíblicos. Sistema de favoritos e historial con partial classes.",
+    "tech": ["C#", ".NET 6", "WinForms", "Visual Studio"],
+    "image": "images/fapsi.svg",
+    "repo": "https://github.com/dedli54/MAD",
+    "docs": "https://deepwiki.com/dedli54/MAD"
+  },
+  {
+    "id": "ia-chat-psicologia",
+    "title": "IA Chat Psicología - Sistema Institucional",
+    "desc": "Plataforma UANL con chat AI (Google Gemini 2.5), gestión de agentes, tracking de tokens, autenticación JWT y reset de contraseña.",
+    "tech": ["React", "Node.js", "Express", "Prisma", "PostgreSQL", "Google Generative AI", "JWT", "TailwindCSS"],
+    "image": "images/project2.svg",
+    "repo": "https://github.com/dedli-backup/IA-Chat-Psicologia-open",
+    "docs": "https://deepwiki.com/dedli-backup/IA-Chat-Psicologia-open"
+  },
+  {
+    "id": "estructura-datos-vacunas",
+    "title": "Sistema de Gestión de Vacunación",
+    "desc": "App desktop Windows para gestión de carnets de vacunación mexicanos (CURP/RFC). Persistencia binaria con linked lists en C++.",
+    "tech": ["C++", "Windows API", "Binary File I/O", "Visual Studio"],
+    "image": "images/project3.svg",
+    "repo": "https://github.com/dedli54/EstructuraDeDatos",
+    "docs": "https://deepwiki.com/dedli54/EstructuraDeDatos"
+  },
+  {
+    "id": "bdm-capa-elearning",
+    "title": "BDM-CAPA - Plataforma E-Learning",
+    "desc": "Sistema web de cursos con compra, progreso tracking y diplomas. Arquitectura database-centric con stored procedures MySQL.",
+    "tech": ["PHP", "MySQL", "JavaScript", "Bootstrap", "PDO"],
+    "image": "images/fapsi.svg",
+    "repo": "https://github.com/dedli54/BDM-CAPA",
+    "docs": "https://deepwiki.com/dedli54/BDM-CAPA"
+  },
+  {
+    "id": "procesamiento-imagenes",
+    "title": "Procesamiento de Imágenes - OpenCV",
+    "desc": "App Windows Forms educativa para visión computacional: 10+ filtros, histogramas, captura de cámara y procesamiento de video.",
+    "tech": ["C#", ".NET Framework", "Emgu.CV", "OpenCV", "Windows Forms", "AForge.Video"],
+    "image": "images/project2.svg",
+    "repo": "https://github.com/dedli54/Procesamiento-de-imagenes",
+    "docs": "https://deepwiki.com/dedli54/Procesamiento-de-imagenes"
+  },
+  {
+    "id": "pw2-chopin-list",
+    "title": "PW-2 Chopin List - E-Commerce",
+    "desc": "Plataforma e-commerce full-stack: catálogo de productos, carrito localStorage, checkout, gestión de vendedores. React + Express + Prisma.",
+    "tech": ["React", "Node.js", "Express", "Prisma", "MySQL", "Bootstrap"],
+    "image": "images/project3.svg",
+    "repo": "https://github.com/dedli54/PW-2",
+    "docs": "https://deepwiki.com/dedli54/PW-2"
+  },
+  {
+    "id": "orden-comida-android",
+    "title": "FoodOrder - Sistema de Pedidos Android",
+    "desc": "App móvil Android para meseros: gestión de mesas, pedidos, customización de platillos y billing. Backend Supabase con PostgreSQL.",
+    "tech": ["Kotlin", "Android", "Supabase", "PostgreSQL", "Ktor"],
+    "image": "images/fapsi.svg",
+    "repo": "https://github.com/dedli54/OrdenComida-main",
+    "docs": "https://deepwiki.com/dedli54/OrdenComida-main"
+  }
+]
